@@ -20,9 +20,6 @@ public class RoupaPMG {
         return descricao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
 
     public int getQuantidadeP() {
         return quantidadeP;
@@ -44,9 +41,6 @@ public class RoupaPMG {
         return estoqueMinimo;
     }
 
-    public void setEstoqueMinimo(int estoqueMinimo) {
-        this.estoqueMinimo = estoqueMinimo;
-    }
 
     public int getQuantidadeG() {
         return quantidadeG;
@@ -60,9 +54,6 @@ public class RoupaPMG {
         return estoqueMaximo;
     }
 
-    public void setEstoqueMaximo(int estoqueMaximo) {
-        this.estoqueMaximo = estoqueMaximo;
-    }
 
 
 

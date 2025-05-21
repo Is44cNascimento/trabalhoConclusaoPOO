@@ -31,17 +31,11 @@ public abstract class Peca {
         return estoqueMinimo;
     }
 
-    public void setEstoqueMinimo(int estoqueMinimo) {
-        this.estoqueMinimo = estoqueMinimo;
-    }
 
     public int getEstoqueMaximo() {
         return estoqueMaximo;
     }
 
-    public void setEstoqueMaximo(int estoqueMaximo) {
-        this.estoqueMaximo = estoqueMaximo;
-    }
 
     public abstract void venda(int quantidade);
     public abstract void reposicaoEstoque();
