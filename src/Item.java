@@ -79,7 +79,7 @@ public class Item {
 
 
 
-        }while (sistemaContinua == true);
+        }while (sistemaContinua);
 
 
     }
