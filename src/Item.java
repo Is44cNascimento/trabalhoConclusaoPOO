@@ -36,6 +36,12 @@ public class Item {
                         relogio.venda(q);
                         
                     } if (opc == 1) {
+                        RoupaPMG camisa = (RoupaPMG) estoqueLoja[1];
+                        System.out.println("Qual tamnho de camisa deseja comprar?");
+                        int t = sc.nextInt();
+                        System.out.println("Quantas camisas deseja comprar?");
+                        int q = sc.nextInt();
+                        camisa.venda(q, t);
 
                         }if (opc == 2) {
 

@@ -60,14 +60,35 @@ public class RoupaPMG {
 
     public void venda(int tamanho, int quantidade) {
         if(tamanho == 1){
-
-        }if(tamanho == 2){
-
-        }if(tamanho == 3){
-
-        }if(tamanho != 1 && tamanho != 2 && tamanho != 3){
-
-        }
+            if(getQuantidadeP() > quantidade) {
+                setQuantidadeP(getQuantidadeP() - quantidade);
+                System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidadeP());
+            }
+            else {
+                System.out.println("QUANTIDADE INSUFICIENTE");
+                System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidadeP());
+            }
+                }if(tamanho == 2){
+                    if(getQuantidadeM() > quantidade) {
+                        setQuantidadeM(getQuantidadeM() - quantidade);
+                        System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidadeM());
+                    }
+                    else {
+                        System.out.println("QUANTIDADE INSUFICIENTE");
+                        System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidadeM());
+                    }
+                        }if(tamanho == 3){
+                            if(getQuantidadeG() > quantidade) {
+                                setQuantidadeG(getQuantidadeG() - quantidade);
+                                System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidadeG());
+                            }
+                            else {
+                                System.out.println("QUANTIDADE INSUFICIENTE");
+                                System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidadeG());
+                            }
+                                }if(tamanho != 1 && tamanho != 2 && tamanho != 3){
+                                        System.out.println("Opcao de tamanho indisponivel !!!!");
+                                }
 
     }
 
