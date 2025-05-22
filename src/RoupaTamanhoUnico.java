@@ -9,7 +9,7 @@ public class RoupaTamanhoUnico extends Peca {
         if( quantidade == 1) {
             setQuantidade(getQuantidade() - quantidade);
             System.out.println("ESTOQUE DE ROUPA TAMANHO UNICO: " + getQuantidade());
-        } if( quantidade  < 1) {
+        } if( quantidade  > 1) {
             System.out.println("QUANTIDADE ACIMA DO PERMITIDO, SOMENTE UMA VENDA POR PESSOA");
         } if (quantidade > getQuantidade()) {
             System.out.println("ESTOQUE INSUFICIENTE");
