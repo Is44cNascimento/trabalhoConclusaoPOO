@@ -45,7 +45,7 @@ public class Item {
 
                         }if (opc == 2) {
                             RoupaTamanhoUnico meia = (RoupaTamanhoUnico) estoqueLoja[2];
-                            System.out.println("Quantas meias deseja comprar?");
+                            System.out.println("Venda limitada a uma por pessoa \n Digite a quantidade de meia:");
                             int qM = sc.nextInt();
                             meia.venda(qM);
 
