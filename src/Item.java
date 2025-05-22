@@ -24,24 +24,24 @@ public class Item {
 
 
         do {
-            System.out.println("ESCOLHA UMA OPCAO DE COMPRA \n" +
-                    "\n 0-Relogio\n" + "1-Camisa\n" + "2-Chapeu\n" + "3-Pulseira \n" + "4-Cachecol \n" + "5-Sair Do Sistema\n" + "9-Repor o Estoque");
+            System.out.println("\nESCOLHA UMA OPCAO DE COMPRA \n" +
+                    "\n0-Relogio\n" + "1-Camisa\n" + "2-Chapeu\n" + "3-Pulseira \n" + "4-Cachecol \n" + "5-Sair Do Sistema\n" + "9-Repor o Estoque");
                     int opc = sc.nextInt();
 
                     if (opc == 0) {
                         Acessorio relogio = (Acessorio) estoqueLoja[0];
 
                         System.out.println("Quantos relgios deseja comprar?");
-                        int q = sc.nextInt();
-                        relogio.venda(q);
+                        int qR = sc.nextInt();
+                        relogio.venda(qR);
                         
                     } if (opc == 1) {
                         RoupaPMG camisa = (RoupaPMG) estoqueLoja[1];
                         System.out.println("Qual tamnho de camisa deseja comprar?");
                         int t = sc.nextInt();
                         System.out.println("Quantas camisas deseja comprar?");
-                        int q = sc.nextInt();
-                        camisa.venda(q, t);
+                        int qT = sc.nextInt();
+                        camisa.venda(qT, t);
 
                         }if (opc == 2) {
 
