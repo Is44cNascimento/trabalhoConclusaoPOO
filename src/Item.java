@@ -27,16 +27,22 @@ public class Item {
             System.out.println("\nESCOLHA UMA OPCAO DE COMPRA \n" +
                     "\n0-Relogio\n" + "1-Camisa\n" + "2-Meia\n" + "3-Pulseira \n" + "4-Cachecol \n" + "5-Sair Do Sistema\n" + "9-Repor o Estoque");
                     int opc = sc.nextInt();
+                    Acessorio relogio = (Acessorio) estoqueLoja[0];
+                    RoupaPMG camisa = (RoupaPMG) estoqueLoja[1];
+                    RoupaTamanhoUnico meia = (RoupaTamanhoUnico) estoqueLoja[2];
+                    Acessorio pulseira = (Acessorio) estoqueLoja[3];
+                    RoupaTamanhoUnico cachecol = (RoupaTamanhoUnico) estoqueLoja[4];
+
 
                     if (opc == 0) {
-                        Acessorio relogio = (Acessorio) estoqueLoja[0];
+
 
                         System.out.println("Quantos relgios deseja comprar?");
                         int qR = sc.nextInt();
                         relogio.venda(qR);
                         
                     } if (opc == 1) {
-                        RoupaPMG camisa = (RoupaPMG) estoqueLoja[1];
+
                         System.out.println("Qual tamnho de camisa deseja comprar?");
                         int t = sc.nextInt();
                         System.out.println("Quantas camisas deseja comprar?");
@@ -44,30 +50,31 @@ public class Item {
                         camisa.venda(qT, t);
 
                         }if (opc == 2) {
-                            RoupaTamanhoUnico meia = (RoupaTamanhoUnico) estoqueLoja[2];
+
                             System.out.println("Venda limitada a uma por pessoa \n Digite a quantidade de meia:");
                             int qM = sc.nextInt();
                             meia.venda(qM);
 
                             }if (opc == 3) {
-
+                                System.out.println("Quantas pulseiras deseja comprar?");
+                                int qP = sc.nextInt();
+                                pulseira.venda(qP);
 
                                 } if (opc == 4) {
+                                    System.out.println("Quantos cachecos deseja comprar?");
+                                    int qCa = sc.nextInt();
+                                    cachecol.venda(qCa);
 
                                     }if (opc == 5) {
                                         sistemaContinua = false;
                                         System.out.println("Obrigado por comprar com  a gente!!!");
 
                                         }if (opc == 9) {
-                                            Acessorio relogio = (Acessorio) estoqueLoja[0];
-
-
-
-
-
-
-
-
+                                          relogio.reposicaoEstoque();
+                                          camisa.reposicaoEstoque();
+                                          meia.reposicaoEstoque();
+                                          pulseira.reposicaoEstoque();
+                                          cachecol.reposicaoEstoque();
                                         }
 
 
