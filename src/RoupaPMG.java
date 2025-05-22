@@ -58,8 +58,16 @@ public class RoupaPMG {
 
 
 
-    public void venda(int quantidade) {
+    public void venda(int tamanho, int quantidade) {
+        if(tamanho == 1){
 
+        }if(tamanho == 2){
+
+        }if(tamanho == 3){
+
+        }if(tamanho != 1 && tamanho != 2 && tamanho != 3){
+
+        }
 
     }
 
