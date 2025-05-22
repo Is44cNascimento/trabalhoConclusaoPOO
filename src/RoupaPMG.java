@@ -62,29 +62,29 @@ public class RoupaPMG {
         if(tamanho == 1){
             if(getQuantidadeP() > quantidade) {
                 setQuantidadeP(getQuantidadeP() - quantidade);
-                System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidadeP());
+                System.out.println("ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
             }
             else {
                 System.out.println("QUANTIDADE INSUFICIENTE");
-                System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidadeP());
+                System.out.println("ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
             }
                 }if(tamanho == 2){
                     if(getQuantidadeM() > quantidade) {
                         setQuantidadeM(getQuantidadeM() - quantidade);
-                        System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidadeM());
+                        System.out.println("ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
                     }
                     else {
                         System.out.println("QUANTIDADE INSUFICIENTE");
-                        System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidadeM());
+                        System.out.println("ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
                     }
                         }if(tamanho == 3){
                             if(getQuantidadeG() > quantidade) {
                                 setQuantidadeG(getQuantidadeG() - quantidade);
-                                System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidadeG());
+                                System.out.println("ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
                             }
                             else {
                                 System.out.println("QUANTIDADE INSUFICIENTE");
-                                System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidadeG());
+                                System.out.println("ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
                             }
                                 }if(tamanho != 1 && tamanho != 2 && tamanho != 3){
                                         System.out.println("Opcao de tamanho indisponivel !!!!");
