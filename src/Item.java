@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Objects;
+
 import java.util.Scanner;
 
 public class Item {
@@ -24,8 +23,8 @@ public class Item {
 
 
         do {
-            System.out.println("\nESCOLHA UMA OPCAO DE COMPRA \n" +
-                    "\n0-Relogio\n" + "1-Camisa\n" + "2-Meia\n" + "3-Pulseira \n" + "4-Cachecol \n" + "5-Sair Do Sistema\n" + "9-Repor o Estoque");
+                 System.out.println("\nESCOLHA UMA OPCAO DE COMPRA ");
+                 System.out.println( "\n0-Relogio\n" + "1-Camisa\n" + "2-Meia\n" + "3-Pulseira \n" + "4-Cachecol \n" + "5-Sair Do Sistema\n" + "9-Repor o Estoque");
                     int opc = sc.nextInt();
                     Acessorio relogio = (Acessorio) estoqueLoja[0];
                     RoupaPMG camisa = (RoupaPMG) estoqueLoja[1];
