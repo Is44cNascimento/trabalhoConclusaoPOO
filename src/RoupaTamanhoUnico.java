@@ -24,7 +24,7 @@ public class RoupaTamanhoUnico extends Peca {
         }
         else {
             System.out.println("ESTOQUE ACIMA DA QUANTIDADE MINIMA");
-            System.out.println("ESTOQUE DE ROUPA TAMANHO UNICO: " + getQuantidade());
+            System.out.println("ESTOQUE DE ROUPA TAMANHO UNICO: " + getQuantidade() + "\n");
         }
 
     }

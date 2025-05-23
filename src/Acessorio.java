@@ -23,7 +23,7 @@ public class Acessorio extends Peca {
         }
         else {
             System.out.println("ESTOQUE ACIMA DA QUANTIDADE MINIMA");
-            System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidade());
+            System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidade() + "\n");
         }
 
     }

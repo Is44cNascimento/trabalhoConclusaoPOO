@@ -95,6 +95,7 @@ public class RoupaPMG {
     public void reposicaoEstoque() {
         if (getQuantidadeP() <= getEstoqueMinimo()){
             setQuantidadeP(getEstoqueMaximo());
+            System.out.println("NOVO ESTOQUE P: " + getQuantidadeP());
         }else{
             System.out.println("ESTOQUE DE ROUPA P ESTA ACIMA DO MINIMO");
             System.out.println("ESTOQUE DE ROUPA TAMANHO P: " + getQuantidadeP());
@@ -102,6 +103,8 @@ public class RoupaPMG {
 
         if (getQuantidadeM() <= getEstoqueMinimo()){
             setQuantidadeM(getEstoqueMaximo());
+            System.out.println("NOVO ESTOQUE M: " + getQuantidadeM());
+
         }else{
             System.out.println("ESTOQUE DE ROUPA M ESTA ACIMA DO MINIMO");
             System.out.println("ESTOQUE DE ROUPA TAMANHO M: " + getQuantidadeM());
@@ -109,14 +112,14 @@ public class RoupaPMG {
 
         if(getQuantidadeG() <= getEstoqueMinimo()){
             setQuantidadeG(getEstoqueMaximo());
+            System.out.println("NOVO ESTOQUE M: " + getQuantidadeM());
         }else{
             System.out.println("ESTOQUE DE ROUPA G ESTA ACIMA DO MINIMO");
-            System.out.println("ESTOQUE DE ROUPA TAMANHO G: " + getQuantidadeG());
+            System.out.println("ESTOQUE DE ROUPA TAMANHO G: " + getQuantidadeG() +"\n");
         }
 
 
-        System.out.println("\n ROUPA P:" + getQuantidadeP() + "\n ROUPA M:" + getQuantidadeM() + "\n ROUPA G:" + getQuantidadeG());
-    }
+         }
 
 
 

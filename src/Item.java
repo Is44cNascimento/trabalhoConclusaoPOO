@@ -7,11 +7,11 @@ public class Item {
 
         Object[] estoqueLoja = new Object[5];
 
-        estoqueLoja[0] = new Acessorio("Relogio",5,5,1) ;
-        estoqueLoja[1] = new RoupaPMG("Camisa",5,5,5,1,5);
+        estoqueLoja[0] = new Acessorio("Relogio",0,5,1) ;
+        estoqueLoja[1] = new RoupaPMG("Camisa",0,0,0,1,5);
         estoqueLoja[2] = new RoupaTamanhoUnico("Meia", 5,5,1);
-        estoqueLoja[3] = new Acessorio("Pulseira",5,5,1) ;
-        estoqueLoja[4] = new RoupaTamanhoUnico("Cachecol", 5,5,1);
+        estoqueLoja[3] = new Acessorio("Pulseira",0,5,1) ;
+        estoqueLoja[4] = new RoupaTamanhoUnico("Cachecol", 0,5,1);
 
 
 
