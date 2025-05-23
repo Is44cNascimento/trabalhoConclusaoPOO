@@ -6,7 +6,7 @@ public class Acessorio extends Peca {
 
     @Override
     public void venda(int quantidade) {
-        if(getQuantidade() > quantidade) {
+        if(getQuantidade() >= quantidade) {
             setQuantidade(getQuantidade() - quantidade);
             System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidade());
         }

@@ -60,7 +60,7 @@ public class RoupaPMG {
 
     public void venda(int tamanho, int quantidade) {
         if(tamanho == 1){
-            if(getQuantidadeP() > quantidade) {
+            if(getQuantidadeP() >= quantidade) {
                 setQuantidadeP(getQuantidadeP() - quantidade);
                 System.out.println("ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
             }
@@ -69,7 +69,7 @@ public class RoupaPMG {
                 System.out.println("ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
             }
                 }if(tamanho == 2){
-                    if(getQuantidadeM() > quantidade) {
+                    if(getQuantidadeM() >= quantidade) {
                         setQuantidadeM(getQuantidadeM() - quantidade);
                         System.out.println("ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
                     }
@@ -78,7 +78,7 @@ public class RoupaPMG {
                         System.out.println("ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
                     }
                         }if(tamanho == 3){
-                            if(getQuantidadeG() > quantidade) {
+                            if(getQuantidadeG() >= quantidade) {
                                 setQuantidadeG(getQuantidadeG() - quantidade);
                                 System.out.println("ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
                             }

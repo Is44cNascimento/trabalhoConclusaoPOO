@@ -43,11 +43,11 @@ public class Item {
                         
                     } if (opc == 1) {
 
-                        System.out.println("Qual tamnho de camisa deseja comprar?");
+                        System.out.println("Qual tamnho de camisa deseja comprar? \n 1-P \n 2-M \n 3-G");
                         int t = sc.nextInt();
                         System.out.println("Quantas camisas deseja comprar?");
                         int qT = sc.nextInt();
-                        camisa.venda(qT, t);
+                        camisa.venda(t, qT);
 
                         }if (opc == 2) {
 
