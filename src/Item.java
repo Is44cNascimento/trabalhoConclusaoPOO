@@ -72,7 +72,10 @@ public class Item {
                                           meia.reposicaoEstoque();
                                           pulseira.reposicaoEstoque();
                                           cachecol.reposicaoEstoque();
+                                        }else{
+                                            System.out.println("OPCAO INVALIDA!!!!!");
                                         }
+
 
 
 
