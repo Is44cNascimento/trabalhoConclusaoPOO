@@ -17,8 +17,6 @@ public class Item {
 
         boolean sistemaContinua = true;
 
-        //Ficou faltando criar a parte de interface, já foi criado o "estoque"
-        //AMANHÃ: Criar a interface e revisar o código
 
 
 
