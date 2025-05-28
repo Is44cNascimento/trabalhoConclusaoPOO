@@ -7,7 +7,6 @@ public class RoupaPMG implements Item {
     private int estoqueMinimo;
     private int estoqueMaximo;
 
-
     public RoupaPMG(String descricao, int quantidadeP, int quantidadeM, int quantidadeG, int estoqueMinimo, int estoqueMaximo) {
         this.descricao = descricao;
         this.quantidadeP = quantidadeP;

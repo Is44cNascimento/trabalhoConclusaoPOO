@@ -4,6 +4,7 @@ public class Acessorio extends Peca implements Item {
         super(descricao, quantidade, estoqueMaximo, estoqueMinimo);
     }
 
+
     @Override
     public void venda(int quantidade) {
         if(getQuantidade() >= quantidade) {

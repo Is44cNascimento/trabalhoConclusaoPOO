@@ -19,6 +19,7 @@ public class RoupaTamanhoUnico extends Peca implements Item {
         }
     }
 
+
     @Override
     public void reposicaoEstoque() {
         if (getQuantidade() <= getEstoqueMinimo()){

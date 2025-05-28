@@ -7,6 +7,7 @@ public class Principal {
 
         Object[] estoqueLoja = new Object[5];
 
+
         estoqueLoja[0] = new Acessorio("Relogio",0,5,1) ;
         estoqueLoja[1] = new RoupaPMG("Camisa",0,0,0,1,5);
         estoqueLoja[2] = new RoupaTamanhoUnico("Meia", 5,5,1);
