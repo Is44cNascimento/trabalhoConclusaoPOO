@@ -1,4 +1,5 @@
-public class RoupaPMG {
+public class RoupaPMG implements Item {
+
     private String descricao;
     private int quantidadeP;
     private int quantidadeM;
@@ -57,7 +58,7 @@ public class RoupaPMG {
 
 
 
-
+    @Override
     public void venda(int tamanho, int quantidade) {
         if(tamanho == 1){
             if(getQuantidadeP() >= quantidade) {
@@ -91,7 +92,7 @@ public class RoupaPMG {
                                 }
 
     }
-
+    @Override
     public void reposicaoEstoque() {
         if (getQuantidadeP() <= getEstoqueMinimo()){
             setQuantidadeP(getEstoqueMaximo());

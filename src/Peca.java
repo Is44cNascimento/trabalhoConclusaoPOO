@@ -1,4 +1,4 @@
-public abstract class Peca {
+public abstract class Peca  {
     private String descricao;
     private int quantidade;
     private int estoqueMinimo;

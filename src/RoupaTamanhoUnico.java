@@ -1,5 +1,8 @@
-public class RoupaTamanhoUnico extends Peca {
+public class RoupaTamanhoUnico extends Peca implements Item {
+    @Override
+    public void venda(int tamanho, int quantidade) {
 
+    }
 
     public RoupaTamanhoUnico(String descricao, int quantidade, int estoqueMaximo, int estoqueMinimo) {
         super(descricao, quantidade, estoqueMaximo, estoqueMinimo);

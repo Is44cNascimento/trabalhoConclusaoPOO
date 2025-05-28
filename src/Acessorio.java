@@ -1,4 +1,4 @@
-public class Acessorio extends Peca {
+public class Acessorio extends Peca implements Item {
 
     public Acessorio(String descricao, int quantidade, int estoqueMaximo, int estoqueMinimo) {
         super(descricao, quantidade, estoqueMaximo, estoqueMinimo);
@@ -14,6 +14,11 @@ public class Acessorio extends Peca {
         System.out.println("QUANTIDADE INSUFICIENTE");
             System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidade());
         }
+    }
+
+    @Override
+    public void venda(int tamanho, int quantidade) {
+
     }
 
     @Override
