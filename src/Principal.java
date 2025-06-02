@@ -6,6 +6,12 @@ public class Principal {
         Scanner sc = new Scanner(System.in);
 
         Item[] estoqueLoja = new Item[5];
+        estoqueLoja[0] = new Acessorio("Relogio",0,5,1) ;
+        estoqueLoja[1] = new RoupaPMG("Camisa",0,0,0,1,5);
+        estoqueLoja[2] = new RoupaTamanhoUnico("Meia", 0,5,1);
+        estoqueLoja[3] = new Acessorio("Pulseira",0,5,1) ;
+        estoqueLoja[4] = new RoupaTamanhoUnico("Cachecol", 0,5,1);
+
 
 
 
@@ -20,12 +26,6 @@ public class Principal {
                  System.out.println("\nESCOLHA UMA OPCAO DE COMPRA ");
                  System.out.println( "\n0-Relogio\n" + "1-Camisa\n" + "2-Meia\n" + "3-Pulseira \n" + "4-Cachecol \n" + "5-Sair Do Sistema\n" + "9-Repor o Estoque");
                     int opc = sc.nextInt();
-                    estoqueLoja[0] = new Acessorio("Relogio",0,5,1) ;
-                    estoqueLoja[1] = new RoupaPMG("Camisa",0,0,0,1,5);
-                    estoqueLoja[2] = new RoupaTamanhoUnico("Meia", 5,5,1);
-                    estoqueLoja[3] = new Acessorio("Pulseira",0,5,1) ;
-                    estoqueLoja[4] = new RoupaTamanhoUnico("Cachecol", 0,5,1);
-
 
 
             if (opc == 0) {
@@ -68,7 +68,8 @@ public class Principal {
                                             estoqueLoja[2].reposicaoEstoque();
                                             estoqueLoja[3].reposicaoEstoque();
                                             estoqueLoja[4].reposicaoEstoque();
-                                        }else{
+                                        }
+                                            if(opc!=0 && opc!=1 && opc!=2 && opc!=3 && opc!=4 && opc!=5){
                                             System.out.println("OPCAO INVALIDA!!!!!");
                                         }
 

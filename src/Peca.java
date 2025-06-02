@@ -38,8 +38,7 @@ public abstract class Peca  {
     }
 
 
-    public abstract void venda(int quantidade);
-    public abstract void reposicaoEstoque();
+
 
 }
 
