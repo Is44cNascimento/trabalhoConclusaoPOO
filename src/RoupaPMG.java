@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class RoupaPMG implements Item {
 
     private String descricao;
@@ -61,13 +63,14 @@ public class RoupaPMG implements Item {
     @Override
     public void venda(int qR) {
 
+        Scanner sc = new Scanner(System.in);
+
 
         int quantidade = qR;
 
 
-            System.out.println("Digite o tamanho da roupa");
-
-                int tamanho = sc.nextInt();
+        System.out.println("Qual tamnho de camisa deseja comprar? \n 1-P \n 2-M \n 3-G");
+            int tamanho = sc.nextInt();
 
         if(tamanho == 1){
             if(getQuantidadeP() >= quantidade) {
@@ -122,7 +125,7 @@ public class RoupaPMG implements Item {
 
         if(getQuantidadeG() <= getEstoqueMinimo()){
             setQuantidadeG(getEstoqueMaximo());
-            System.out.println("NOVO ESTOQUE M: " + getQuantidadeM());
+            System.out.println("NOVO ESTOQUE G: " + getQuantidadeG());
         }else{
             System.out.println("ESTOQUE DE ROUPA G ESTA ACIMA DO MINIMO");
             System.out.println("ESTOQUE DE ROUPA TAMANHO G: " + getQuantidadeG() +"\n");

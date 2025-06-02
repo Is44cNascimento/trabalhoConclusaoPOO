@@ -37,11 +37,10 @@ public class Principal {
                         
                     } if (opc == 1) {
 
-                        System.out.println("Qual tamnho de camisa deseja comprar? \n 1-P \n 2-M \n 3-G");
-                        int t = sc.nextInt();
+
                         System.out.println("Quantas camisas deseja comprar?");
-                        int qT = sc.nextInt();
-                        estoqueLoja[1].venda(t, qT);
+                        int qR = sc.nextInt();
+                        estoqueLoja[1].venda(qR);
 
                         }if (opc == 2) {
 

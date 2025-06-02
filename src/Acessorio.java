@@ -17,10 +17,7 @@ public class Acessorio extends Peca implements Item {
         }
     }
 
-    @Override
-    public void venda(int tamanho, int quantidade) {
 
-    }
 
     @Override
     public void reposicaoEstoque() {
