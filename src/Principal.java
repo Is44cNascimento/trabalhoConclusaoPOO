@@ -13,17 +13,10 @@ public class Principal {
         estoqueLoja[3] = new Acessorio("Pulseira",0,5,1) ;
         estoqueLoja[4] = new RoupaTamanhoUnico("Cachecol", 0,5,1);
 
-
-
-
-
-
         boolean sistemaContinua = true;
 
-
-
-
         do {
+
                  System.out.println("\nESCOLHA UMA OPCAO DE COMPRA ");
                  System.out.println( "\n0-Relogio\n" + "1-Camisa\n" + "2-Meia\n" + "3-Pulseira \n" + "4-Cachecol \n" + "5-Sair Do Sistema\n" + "9-Repor o Estoque");
                     int opc = sc.nextInt();
@@ -35,17 +28,17 @@ public class Principal {
                         System.out.println("Quantos relgios deseja comprar?");
                         int qR = sc.nextInt();
                         estoqueLoja[0].venda(qR);
-                        
-                    } if (opc == 1) {
 
+                    } if (opc == 1) {
+                        System.out.println("Quantas camisas deseja comprar?");
                             try{
-                                System.out.println("Quantas camisas deseja comprar?");
                                 int qR = sc.nextInt();
                                 estoqueLoja[1].venda(qR);
-                            }catch (InputMismatchException e){
+                            }catch(InputMismatchException e){
                                 System.out.println("Digite o numero correspondente  \n 1-P \n 2-M \n 3-G");
                                 int qR = sc.nextInt();
                                 estoqueLoja[1].venda(qR);
+
                             }
 
                         }if (opc == 2) {
