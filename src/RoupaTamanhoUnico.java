@@ -15,6 +15,11 @@ public class RoupaTamanhoUnico extends Peca implements Item {
         }
     }
 
+    @Override
+    public void estoqueFinal() {
+        System.out.println("Estoque de "+getDescricao() +": " + getQuantidade());
+    }
+
 
     @Override
     public void reposicaoEstoque() {

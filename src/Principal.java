@@ -1,4 +1,5 @@
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Principal {
@@ -37,10 +38,14 @@ public class Principal {
                         
                     } if (opc == 1) {
 
+                            try{
+                                System.out.println("Quantas camisas deseja comprar?");
+                                int qR = sc.nextInt();
+                                estoqueLoja[1].venda(qR);
+                            }catch (InputMismatchException e){
+                                System.out.println("Digite o numero correspondente  \n 1-P \n 2-M \n 3-G");
 
-                        System.out.println("Quantas camisas deseja comprar?");
-                        int qR = sc.nextInt();
-                        estoqueLoja[1].venda(qR);
+                            }
 
                         }if (opc == 2) {
 
@@ -61,6 +66,12 @@ public class Principal {
                                     }if (opc == 5) {
                                         sistemaContinua = false;
                                         System.out.println("Obrigado por comprar com  a gente!!!");
+
+                                        estoqueLoja[0].estoqueFinal();
+                                        estoqueLoja[1].estoqueFinal();
+                                        estoqueLoja[2].estoqueFinal();
+                                        estoqueLoja[3].estoqueFinal();
+                                        estoqueLoja[4].estoqueFinal();
 
                                         }if (opc == 9) {
                                             estoqueLoja[0].reposicaoEstoque();

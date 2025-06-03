@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class RoupaPMG implements Item {
@@ -58,7 +59,12 @@ public class RoupaPMG implements Item {
 
 
 
-
+    @Override
+    public void estoqueFinal() {
+        System.out.println("Estoque de roupa P: " + getQuantidadeP());
+        System.out.println("Estoque de roupa M: " + getQuantidadeM());
+        System.out.println("Estoque de roupa G: " + getQuantidadeG());
+    }
 
     @Override
     public void venda(int qR) {
@@ -69,40 +75,47 @@ public class RoupaPMG implements Item {
         int quantidade = qR;
 
 
-        System.out.println("Qual tamnho de camisa deseja comprar? \n 1-P \n 2-M \n 3-G");
+            System.out.println("Qual tamnho de camisa deseja comprar? \n 1-P \n 2-M \n 3-G");
             int tamanho = sc.nextInt();
 
-        if(tamanho == 1){
-            if(getQuantidadeP() >= quantidade) {
-                setQuantidadeP(getQuantidadeP() - quantidade);
-                System.out.println("ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
+
+
+
+            if(tamanho == 1){
+                if(getQuantidadeP() >= quantidade) {
+                    setQuantidadeP(getQuantidadeP() - quantidade);
+                    System.out.println("ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
+                }
+                else {
+                    System.out.println("QUANTIDADE INSUFICIENTE");
+                    System.out.println("ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
+                }
+            }if(tamanho == 2){
+                if(getQuantidadeM() >= quantidade) {
+                    setQuantidadeM(getQuantidadeM() - quantidade);
+                    System.out.println("ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
+                }
+                else {
+                    System.out.println("QUANTIDADE INSUFICIENTE");
+                    System.out.println("ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
+                }
+            }if(tamanho == 3){
+                if(getQuantidadeG() >= quantidade) {
+                    setQuantidadeG(getQuantidadeG() - quantidade);
+                    System.out.println("ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
+                }
+                else {
+                    System.out.println("QUANTIDADE INSUFICIENTE");
+                    System.out.println("ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
+                }
+            }if(tamanho != 1 && tamanho != 2 && tamanho != 3){
+                System.out.println("Opcao de tamanho indisponivel !!!!");
             }
-            else {
-                System.out.println("QUANTIDADE INSUFICIENTE");
-                System.out.println("ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
-            }
-        }if(tamanho == 2){
-            if(getQuantidadeM() >= quantidade) {
-                setQuantidadeM(getQuantidadeM() - quantidade);
-                System.out.println("ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
-            }
-            else {
-                System.out.println("QUANTIDADE INSUFICIENTE");
-                System.out.println("ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
-            }
-        }if(tamanho == 3){
-            if(getQuantidadeG() >= quantidade) {
-                setQuantidadeG(getQuantidadeG() - quantidade);
-                System.out.println("ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
-            }
-            else {
-                System.out.println("QUANTIDADE INSUFICIENTE");
-                System.out.println("ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
-            }
-        }if(tamanho != 1 && tamanho != 2 && tamanho != 3){
-            System.out.println("Opcao de tamanho indisponivel !!!!");
+
+
         }
-    }
+
+
 
     @Override
     public void reposicaoEstoque() {
