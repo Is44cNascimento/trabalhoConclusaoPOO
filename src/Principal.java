@@ -44,7 +44,8 @@ public class Principal {
                                 estoqueLoja[1].venda(qR);
                             }catch (InputMismatchException e){
                                 System.out.println("Digite o numero correspondente  \n 1-P \n 2-M \n 3-G");
-
+                                int qR = sc.nextInt();
+                                estoqueLoja[1].venda(qR);
                             }
 
                         }if (opc == 2) {
