@@ -131,7 +131,7 @@ public class RoupaPMG implements Item {
 
     @Override
     public void reposicaoEstoque() {
-        if (getQuantidadeP() <= getEstoqueMinimo()){
+        if (getQuantidadeP() < getEstoqueMinimo()){
             setQuantidadeP(getEstoqueMaximo());
             System.out.println("NOVO ESTOQUE P: " + getQuantidadeP());
         }else{
@@ -139,7 +139,7 @@ public class RoupaPMG implements Item {
             System.out.println("ESTOQUE DE ROUPA TAMANHO P: " + getQuantidadeP());
         }
 
-        if (getQuantidadeM() <= getEstoqueMinimo()){
+        if (getQuantidadeM() < getEstoqueMinimo()){
             setQuantidadeM(getEstoqueMaximo());
             System.out.println("NOVO ESTOQUE M: " + getQuantidadeM());
 
@@ -148,7 +148,7 @@ public class RoupaPMG implements Item {
             System.out.println("ESTOQUE DE ROUPA TAMANHO M: " + getQuantidadeM());
         }
 
-        if(getQuantidadeG() <= getEstoqueMinimo()){
+        if(getQuantidadeG() < getEstoqueMinimo()){
             setQuantidadeG(getEstoqueMaximo());
             System.out.println("NOVO ESTOQUE G: " + getQuantidadeG());
         }else{

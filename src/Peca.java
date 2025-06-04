@@ -1,4 +1,4 @@
-public abstract class Peca  {
+public abstract class Peca implements Item {
 
     private String descricao;
     private int quantidade;

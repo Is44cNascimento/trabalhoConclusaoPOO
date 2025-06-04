@@ -25,7 +25,7 @@ public class RoupaTamanhoUnico extends Peca implements Item {
 
     @Override
     public void reposicaoEstoque() {
-        if (getQuantidade() <= getEstoqueMinimo()){
+        if (getQuantidade() < getEstoqueMinimo()){
             setQuantidade(getEstoqueMaximo());
             System.out.println("ESTOQUE DE ROUPA TAMANHO UNICO: " + getQuantidade());
         }

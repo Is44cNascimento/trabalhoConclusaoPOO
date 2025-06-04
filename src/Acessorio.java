@@ -22,7 +22,7 @@ public class Acessorio extends Peca implements Item {
         }
 
         if(quantidade == 0){
-            System.out.println("QUANTIDADE INVALIDA");
+            System.out.println("QUANTIDADE INVALIDA, DIGITE UM VALOR MAIOR QUE ZERO");
         }
     }
 
@@ -30,7 +30,7 @@ public class Acessorio extends Peca implements Item {
 
     @Override
     public void reposicaoEstoque() {
-        if (getQuantidade() <= getEstoqueMinimo()){
+        if (getQuantidade() < getEstoqueMinimo()){
             setQuantidade(getEstoqueMaximo());
         }
         else {
