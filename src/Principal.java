@@ -34,7 +34,7 @@ public class Principal {
                             try{
                                 int qR = sc.nextInt();
                                 estoqueLoja[1].venda(qR);
-                            }catch(InputMismatchException e){
+                            }catch(InputMismatchException A){
                                 System.out.println("Digite o numero correspondente  \n 1-P \n 2-M \n 3-G");
                                 int qR = sc.nextInt();
                                 estoqueLoja[1].venda(qR);
@@ -74,7 +74,7 @@ public class Principal {
                                             estoqueLoja[3].reposicaoEstoque();
                                             estoqueLoja[4].reposicaoEstoque();
                                         }
-                                            if(opc!=0 && opc!=1 && opc!=2 && opc!=3 && opc!=4 && opc!=5){
+                                            if(opc!=0 && opc!=1 && opc!=2 && opc!=3 && opc!=4 && opc!=5 && opc!=9){
                                             System.out.println("OPCAO INVALIDA!!!!!");
                                         }
 
