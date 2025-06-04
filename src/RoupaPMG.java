@@ -86,7 +86,7 @@ public class RoupaPMG implements Item {
                 }
                 else {
                     System.out.println("QUANTIDADE INSUFICIENTE");
-                    System.out.println("VENDA REALIZADA COM SUCESSO!!! \n"+"ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
+                    System.out.println("ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
                 }
 
                 if(quantidade == 0){
@@ -99,7 +99,7 @@ public class RoupaPMG implements Item {
                 }
                 else {
                     System.out.println("QUANTIDADE INSUFICIENTE");
-                    System.out.println("VENDA REALIZADA COM SUCESSO!!! \n"+"ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
+                    System.out.println("ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
                 }
 
                 if(quantidade == 0){
@@ -112,8 +112,8 @@ public class RoupaPMG implements Item {
                 }
                 else {
                     System.out.println("QUANTIDADE INSUFICIENTE");
-                    System.out.println("VENDA REALIZADA COM SUCESSO!!! \n"+"ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
-                }
+                    System.out.println("ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
+                    }
 
                 if(quantidade == 0){
                     System.out.println("QUANTIDADE INVALIDA, DIGITE UM VALOR MAIOR QUE ZERO");
