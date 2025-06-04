@@ -79,16 +79,14 @@ public class RoupaPMG implements Item {
             int tamanho = sc.nextInt();
 
 
-
-
             if(tamanho == 1){
                 if(getQuantidadeP() >= quantidade) {
                     setQuantidadeP(getQuantidadeP() - quantidade);
-                    System.out.println("ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
+                    System.out.println("VENDA REALIZADA COM SUCESSO!!! \n"+"ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
                 }
                 else {
                     System.out.println("QUANTIDADE INSUFICIENTE");
-                    System.out.println("ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
+                    System.out.println("VENDA REALIZADA COM SUCESSO!!! \n"+"ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
                 }
 
                 if(quantidade == 0){
@@ -97,11 +95,11 @@ public class RoupaPMG implements Item {
             }if(tamanho == 2){
                 if(getQuantidadeM() >= quantidade) {
                     setQuantidadeM(getQuantidadeM() - quantidade);
-                    System.out.println("ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
+                    System.out.println("VENDA REALIZADA COM SUCESSO!!! \n"+"ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
                 }
                 else {
                     System.out.println("QUANTIDADE INSUFICIENTE");
-                    System.out.println("ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
+                    System.out.println("VENDA REALIZADA COM SUCESSO!!! \n"+"ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
                 }
 
                 if(quantidade == 0){
@@ -110,11 +108,11 @@ public class RoupaPMG implements Item {
             }if(tamanho == 3){
                 if(getQuantidadeG() >= quantidade) {
                     setQuantidadeG(getQuantidadeG() - quantidade);
-                    System.out.println("ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
+                    System.out.println("VENDA REALIZADA COM SUCESSO!!! \n"+"ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
                 }
                 else {
                     System.out.println("QUANTIDADE INSUFICIENTE");
-                    System.out.println("ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
+                    System.out.println("VENDA REALIZADA COM SUCESSO!!! \n"+"ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
                 }
 
                 if(quantidade == 0){

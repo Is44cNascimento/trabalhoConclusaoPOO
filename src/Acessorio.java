@@ -14,7 +14,7 @@ public class Acessorio extends Peca implements Item {
     public void venda(int quantidade) {
         if(getQuantidade() >= quantidade) {
             setQuantidade(getQuantidade() - quantidade);
-            System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidade());
+            System.out.println("VENDA REALIZADA COM SUCESSO!!! \n"+"ESTOQUE DE "+getDescricao() +": " + getQuantidade());
         }
         else {
         System.out.println("QUANTIDADE INSUFICIENTE");
@@ -32,6 +32,8 @@ public class Acessorio extends Peca implements Item {
     public void reposicaoEstoque() {
         if (getQuantidade() < getEstoqueMinimo()){
             setQuantidade(getEstoqueMaximo());
+
+
         }
         else {
             System.out.println("ESTOQUE ACIMA DA QUANTIDADE MINIMA");

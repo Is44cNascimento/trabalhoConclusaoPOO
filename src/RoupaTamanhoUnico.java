@@ -7,7 +7,7 @@ public class RoupaTamanhoUnico extends Peca implements Item {
     public void venda(int quantidade) {
         if( quantidade == 1) {
             setQuantidade(getQuantidade() - quantidade);
-            System.out.println("ESTOQUE DE ROUPA TAMANHO UNICO: " + getQuantidade());
+            System.out.println("VENDA REALIZADA COM SUCESSO!!! \n"+"ESTOQUE DE ROUPA TAMANHO UNICO: " + getQuantidade());
         } if( quantidade  > 1) {
             System.out.println("QUANTIDADE ACIMA DO PERMITIDO, SOMENTE UMA VENDA POR PESSOA");
         } if (quantidade > getQuantidade()) {
