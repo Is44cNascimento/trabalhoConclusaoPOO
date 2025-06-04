@@ -12,6 +12,8 @@ public class RoupaTamanhoUnico extends Peca implements Item {
             System.out.println("QUANTIDADE ACIMA DO PERMITIDO, SOMENTE UMA VENDA POR PESSOA");
         } if (quantidade > getQuantidade()) {
             System.out.println("ESTOQUE INSUFICIENTE");
+        }if(quantidade == 0){
+            System.out.println("QUANTIDADE INVALIDA, DIGITE UM VALOR MAIOR QUE ZERO");
         }
     }
 

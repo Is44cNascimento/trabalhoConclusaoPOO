@@ -90,6 +90,10 @@ public class RoupaPMG implements Item {
                     System.out.println("QUANTIDADE INSUFICIENTE");
                     System.out.println("ESTOQUE DE "+getDescricao() +" P: " + getQuantidadeP());
                 }
+
+                if(quantidade == 0){
+                    System.out.println("QUANTIDADE INVALIDA, DIGITE UM VALOR MAIOR QUE ZERO");
+                }
             }if(tamanho == 2){
                 if(getQuantidadeM() >= quantidade) {
                     setQuantidadeM(getQuantidadeM() - quantidade);
@@ -99,6 +103,10 @@ public class RoupaPMG implements Item {
                     System.out.println("QUANTIDADE INSUFICIENTE");
                     System.out.println("ESTOQUE DE "+getDescricao() +" M: " + getQuantidadeM());
                 }
+
+                if(quantidade == 0){
+                    System.out.println("QUANTIDADE INVALIDA, DIGITE UM VALOR MAIOR QUE ZERO");
+                }
             }if(tamanho == 3){
                 if(getQuantidadeG() >= quantidade) {
                     setQuantidadeG(getQuantidadeG() - quantidade);
@@ -107,6 +115,10 @@ public class RoupaPMG implements Item {
                 else {
                     System.out.println("QUANTIDADE INSUFICIENTE");
                     System.out.println("ESTOQUE DE "+getDescricao() +" G: " + getQuantidadeG());
+                }
+
+                if(quantidade == 0){
+                    System.out.println("QUANTIDADE INVALIDA, DIGITE UM VALOR MAIOR QUE ZERO");
                 }
             }if(tamanho != 1 && tamanho != 2 && tamanho != 3){
                 System.out.println("Opcao de tamanho indisponivel !!!!");

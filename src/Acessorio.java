@@ -20,6 +20,10 @@ public class Acessorio extends Peca implements Item {
         System.out.println("QUANTIDADE INSUFICIENTE");
             System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidade());
         }
+
+        if(quantidade == 0){
+            System.out.println("QUANTIDADE INVALIDA");
+        }
     }
 
 
