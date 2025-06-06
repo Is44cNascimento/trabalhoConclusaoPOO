@@ -5,6 +5,8 @@ public class Acessorio extends Peca implements Item {
     }
 
 
+
+
     @Override
     public void estoqueFinal() {
         System.out.println("Estoque de "+getDescricao() +": " + getQuantidade());
@@ -40,5 +42,10 @@ public class Acessorio extends Peca implements Item {
             System.out.println("ESTOQUE DE "+getDescricao() +": " + getQuantidade() + "\n");
         }
 
+    }
+
+    @Override
+    public String descricao() {
+        return getDescricao();
     }
 }

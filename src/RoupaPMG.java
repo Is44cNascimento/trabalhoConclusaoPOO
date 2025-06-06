@@ -59,11 +59,21 @@ public class RoupaPMG implements Item {
 
 
 
+    public String Descricao() {
+        return getDescricao();
+    }
+
+
     @Override
     public void estoqueFinal() {
         System.out.println("Estoque de roupa P: " + getQuantidadeP());
         System.out.println("Estoque de roupa M: " + getQuantidadeM());
         System.out.println("Estoque de roupa G: " + getQuantidadeG());
+    }
+
+    @Override
+    public String descricao() {
+        return getDescricao();
     }
 
     @Override
@@ -156,6 +166,8 @@ public class RoupaPMG implements Item {
 
 
          }
+
+
 
 
 

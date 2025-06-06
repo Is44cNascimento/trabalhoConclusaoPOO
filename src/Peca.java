@@ -1,4 +1,4 @@
-public abstract class Peca implements Item {
+public abstract class Peca  {
 
     private String descricao;
     private int quantidade;
@@ -37,6 +37,9 @@ public abstract class Peca implements Item {
         return estoqueMaximo;
     }
 
+    public abstract void venda (int quantidadeDeVenda);
+    public abstract void reposicaoEstoque();
+    public  abstract String descricao();
 
 
 

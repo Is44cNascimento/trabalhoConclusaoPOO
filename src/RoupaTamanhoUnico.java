@@ -3,6 +3,13 @@ public class RoupaTamanhoUnico extends Peca implements Item {
     public RoupaTamanhoUnico(String descricao, int quantidade, int estoqueMaximo, int estoqueMinimo) {
         super(descricao, quantidade, estoqueMaximo, estoqueMinimo);
     }
+
+
+    @Override
+    public String descricao() {
+        return super.getDescricao();
+    }
+
     @Override
     public void venda(int quantidade) {
         if( quantidade == 1) {

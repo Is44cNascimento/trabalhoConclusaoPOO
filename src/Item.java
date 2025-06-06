@@ -5,4 +5,5 @@ public interface Item {
     void venda(int quantidadeDeVenda);
 
     void estoqueFinal();
+    String descricao();
 }
