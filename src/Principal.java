@@ -40,9 +40,16 @@ public class Principal {
             }
 
             if(opc != 5 && opc != 9) {
-                System.out.println("Quantos "+novoItem[opc].descricao() +" deseja comprar?");
-                int quantidadeDeVenda = sc.nextInt();
-                novoItem[opc].venda(quantidadeDeVenda);
+               try {
+                   System.out.println("Quantos " + novoItem[opc].descricao() + " deseja comprar?");
+                   int quantidadeDeVenda = sc.nextInt();
+                   novoItem[opc].venda(quantidadeDeVenda);
+               } catch (Exception e) {
+                   System.out.println("Digite o numero correspondente ao tamanho 1-P 2-M 3-G");
+                   int quantidadeDevenda=sc.nextInt();
+                   System.out.println("ENTENDIDO 1-SIM OU 2-NAO");
+
+               }
             }
 
         }while (sistemaContinua);
